@@ -16,13 +16,15 @@ const Header = () => {
     },
     {
       name: "Community",
-      link: "/community",
+      link: "/events",
+      
     },
     {
       name: "Chapters",
       link: "/chapters",
     },
   ];
+
   return (
     <>
       <nav className="w-full h-auto bg-black lg:px-24 md:px-16 sm:px-14 px-8 py-2 shadow-md ">
@@ -62,12 +64,32 @@ const Header = () => {
             <ul className="list-none  lg:flex md:flex sm:block block gap-x-10 gap-y-16">
               {Navbar.map((item, index) => (
                 <li key={index}>
-                  <Link
-                    to={item.link}
-                    className="text-white mx-2 text-[1.15rem] font-medium tracking-wider hover:text-gray-200 ease-out duration-700"
-                  >
-                    {item.name}
-                  </Link>
+                  {item.dropdown ? (
+                    <div className="relative inline-block">
+                      <span className="text-white mx-2 text-[1.15rem] font-medium tracking-wider hover:text-gray-200 ease-out duration-700 cursor-pointer">
+                        {item.name}
+                      </span>
+                      <ul className={`absolute bg-black text-white pt-2 pb-1 px-3 rounded-md ${navbar ? 'block' : 'hidden'}`}>
+                        {item.dropdown.map((subItem, subIndex) => (
+                          <li key={subIndex}>
+                            <Link
+                              to={subItem.link}
+                              className="block py-1 hover:text-gray-200"
+                            >
+                              {subItem.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : (
+                    <Link
+                      to={item.link}
+                      className="text-white mx-2 text-[1.15rem] font-medium tracking-wider hover:text-gray-200 ease-out duration-700"
+                    >
+                      {item.name}
+                    </Link>
+                  )}
                 </li>
               ))}
               <button className="bg-Yellow text-[1.1rem] font-semibold text-black px-4 py-1.5 rounded lg:ml-10 md:ml-6 sm:ml-0 ml-0">
