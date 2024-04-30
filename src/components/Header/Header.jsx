@@ -8,15 +8,15 @@ const Header = () => {
   const Navbar = [
     {
       name: "Home",
-      link: "/Home",
+      link: "/home",
     },
     {
       name: "About",
-      link: "/About",
+      link: "/about",
     },
     {
       name: "Community",
-      link: "/Community",
+      link: "/community",
     },
     {
       name: "Chapters",
@@ -25,11 +25,11 @@ const Header = () => {
   ];
   return (
     <>
-      <nav className="w-full h-auto bg-black lg:px-24 md:px-16 sm:px-14 px-12 py-4 shadow-md">
-        <div className="justify-between ml-4 mx-auto lg:w-full md:items-center md:flex">
+      <nav className="w-full h-auto bg-black lg:px-24 md:px-16 sm:px-14 px-8 py-2 shadow-md ">
+        <div className="justify-between ml-4 mx-auto lg:w-full md:items-center md:flex ">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              <Link to="/" className="flex items-center">
+              <Link to="/home" className="flex items-center">
                 <img src={logo} alt="Logo" className="h-8 md:h-10" />
               </Link>
 
@@ -59,12 +59,12 @@ const Header = () => {
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="list-none  lg:flex md:flex sm:block block gap-x-5 gap-y-16">
+            <ul className="list-none  lg:flex md:flex sm:block block gap-x-10 gap-y-16">
               {Navbar.map((item, index) => (
                 <li key={index}>
                   <Link
                     to={item.link}
-                    className="text-white text-[1.15rem] font-medium tracking-wider hover:text-gray-200 ease-out duration-700"
+                    className="text-white mx-2 text-[1.15rem] font-medium tracking-wider hover:text-gray-200 ease-out duration-700"
                   >
                     {item.name}
                   </Link>

@@ -156,7 +156,32 @@ const About = () => {
         </p>
       </div>
       <br />
-      <br />
+      <div className="guildlines flex flex-col mx-4 w-full md:mx-96">
+  <h1 className="font-normal text-Yellow text-4xl">CINKOD</h1>
+  <h1 className="font-normal text-Blue text-2xl mb-5">
+    COMMUNITY GUIDELINES
+  </h1>
+  <div className="font-normal text-white text-xl">
+    <a href="#" className="mb-4 block border-b border-white w-full md:w-1/2 lg:w-1/3">
+      <h1 className="inline-block">
+        Community Guideline
+        <span className="inline-block ml-2 text-blue-500">+</span>
+      </h1>
+    </a>
+    <a href="#" className="mb-4 block border-b border-white w-full md:w-1/2 lg:w-1/3">
+      <h1 className="inline-block">
+        Privacy Policy
+        <span className="inline-block ml-2 text-blue-500">+</span>
+      </h1>
+    </a>
+    <a href="#" className="mb-4 block border-b border-white w-full md:w-1/2 lg:w-1/3">
+      <h1 className="inline-block">
+        Terms and Condition
+        <span className="inline-block ml-2 text-blue-500">+</span>
+      </h1>
+    </a>
+  </div>
+</div>
 
       <div className="flexCenter paddings innerWidth">
         <div className="w-full h-full flex justify-center items-center">
@@ -165,11 +190,11 @@ const About = () => {
               <h1 className="text-black text-center font-bold text-3xl pb-4">
                 Supported By:
               </h1>
-              <div className="supporters  flex justify-center items-center flex-col sm:flex-row">
+              <div className="supporters flex justify-center items-center flex-col sm:flex-row">
                 <img
                   src={exampleImage}
                   alt="Supporter 1"
-                  className="w-1/4 h-auto max-w-24 rounded-full object-cover mb-4 sm:mr-4"
+                  className="w-1/4  h-auto max-w-24 rounded-full object-cover mb-4 sm:mr-4"
                 />
                 <img
                   src={exampleImage}
