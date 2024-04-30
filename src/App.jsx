@@ -1,4 +1,4 @@
-import Router from "./Pages/Router";
+import Router from "./Routes/Router";
 import "./App.css"
 
 

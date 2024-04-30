@@ -1,13 +1,13 @@
 import "./About.css";
 import exampleImage from "../../assets/example.jpg";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const About = () => {
   return (
     <section className="introduction">
-      <Header/>
-      <div className="title flex flex-col py-10 pt-12 pl-8">
+      <Header />
+      <div className="title flex flex-col pt-12 pl-8">
         <div className="text text-center">
           <h1 className="text-Blue uppercase font-bold text-5xl tracking-normal ">
             cinkod <span className="text-Yellow uppercase">developer</span>{" "}
@@ -22,22 +22,27 @@ const About = () => {
             A vibrant tech community crafted for students, where the sparks of
             code meet creativity. It’s a place where learning and <br />
             collaborationthrive, empowering students to turn their digital
-            dreams into reality. In the heart of Cinkode, every <br />
+            dreams into reality. In the heart of CINKOD, every <br />
             student finds a path to grow, connect, and innovate.
           </p>
         </div>
       </div>
-      <div className="cards flex flex-row justify-center py-6 ">
-        <div className="w-40 h-40 bg-opacity-20 border-gray-100 rounded-lg shadow-md py-8 mx-2 bg-gray-300"></div>
-        <div className="w-40 h-40 bg-opacity-20 border-gray-100 rounded-lg shadow-md py-8 mx-2 bg-gray-300"></div>
-        <div className="w-40 h-40 bg-opacity-20 border-gray-100 rounded-lg shadow-md py-8 mx-2 bg-gray-300"></div>
-        <div className="w-40 h-40 bg-opacity-20 border-gray-100 rounded-lg shadow-md py-8 mx-2 bg-gray-300"></div>
-        <div className="w-40 h-40 bg-opacity-20 border-gray-100 rounded-lg shadow-md py-8 mx-2 bg-gray-300"></div>
-        <div className="w-40 h-40 bg-opacity-20 border-gray-100 rounded-lg shadow-md py-8 mx-2 bg-gray-300"></div>
+      <div className="title flex flex-col">{/* Your title content */}</div>
+      <div className="cards flex flex-wrap justify-center py-6">
+        {/* Displaying the cards */}
+        {[...Array(6)].map((_, index) => (
+          <div
+            key={index}
+            className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2"
+          >
+            {/* Your card content */}
+            <div className="w-full h-40 bg-opacity-20 border-gray-100 rounded-lg shadow-md py-8 bg-gray-300 mx-auto"></div>
+          </div>
+        ))}
       </div>
       <div>
         <div className="quotes text-center">
-          <p className="text-white text-1xl font-semibold py-4">
+          <p className="text-white text-1xl font-semibold pt-8">
             <span className="text-Blue font-bold ">"</span>Bacon ipsum dolor
             amet tri-tip biltong kielbasa pancetta picanha <br />
             tenderloinspan<span className="text-Blue">"</span>
@@ -47,9 +52,12 @@ const About = () => {
           </p>
         </div>
         <br />
+        <div className="title flex flex-col py-2 pl-8">
+          {/* Your title content */}
+        </div>
         <div className="flexCenter paddings innerWidth">
           <div className="w-full h-full flex justify-center items-center">
-            <div className="w-3/4 h-52 flex justify-center items-center bg-gradient-to-r from-Blue via-Yellow to-blue-800 rounded-lg shadow-md">
+            <div className="w-full sm:w-3/4 h-auto flex justify-center items-center bg-gradient-to-r from-Blue via-Yellow to-blue-800 rounded-lg shadow-md p-8">
               <div className="content flex flex-col">
                 <h1 className="text-black text-center font-bold text-3xl pb-4">
                   Open Cinkod community in your college
@@ -66,7 +74,10 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="aboutus-text text-white flex flex-col mx-96">
+        <div className="title flex flex-col py-10 pt-12 pl-8">
+          {/* Your title content */}
+        </div>
+        <div className="aboutus-text text-white flex flex-col mx-4 md:mx-96">
           <h1 className="font-bold text-2xl mb-5">ABOUT US</h1>
           <p>
             Bacon ipsum dolor amet tri-tip biltong kielbasa pancetta picanha
@@ -108,25 +119,25 @@ const About = () => {
             sausage.
           </p>
         </div>
+
         <div className="flex justify-center items-center mt-7 text-white">
-          <div className="flex flex-row mx-96">
-            <div className=" ">
+          <div className="flex flex-col md:flex-row mx-4 md:mx-96">
+            <div className="md:w-1/2 md:pr-4">
               <img
                 src={exampleImage}
                 alt="Description of your image"
-                className="w-72 h-auto "
+                className="w-full h-auto "
               />
             </div>
-
-            <div className="w-1/2 px-4">
+            <div className="md:w-1/2 md:pl-4">
               <h2 className="text-2xl font-bold mb-4">
                 We are{" "}
                 <span className="text-Blue">
                   committed to towards the development
                 </span>{" "}
-                of you skills and activity.
+                of your skills and activity.
               </h2>
-              <p className="text-lg ">
+              <p className="text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                 eget turpis quis lorem sollicitudin blandit. Integer lacinia
                 odio sit amet felis lobortis vehicula. Sed ultricies dui in
@@ -134,8 +145,8 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div>{" "}
-        <p className="text-white w-1/2 text-justify mt-4 mx-96">
+        </div>
+        <p className="text-white w-full md:w-1/2 text-justify mt-4 mx-4 md:mx-96">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quos
           necessitatibus eum facilis ipsa quaerat deleniti, laudantium cum
           voluptatem, perferendis nihil molestias. Dolores facilis corporis
@@ -145,41 +156,41 @@ const About = () => {
         </p>
       </div>
       <br />
+      <br />
+
       <div className="flexCenter paddings innerWidth">
         <div className="w-full h-full flex justify-center items-center">
-          <div className="w-3/4 h-auto flex justify-center items-center bg-gradient-to-r from-Blue via-Yellow to-blue-800 rounded-lg shadow-md p-8">
+          <div className="w-3/4 h-auto flex flex-col justify-center items-center bg-gradient-to-r from-Blue via-Yellow to-blue-800 rounded-lg shadow-md p-8">
             <div className="content flex flex-col">
               <h1 className="text-black text-center font-bold text-3xl pb-4">
-                Supporte By :
+                Supported By:
               </h1>
-              <div className="flex justify-between">
-  <img
-    src={exampleImage}
-    alt="Supporter 1"
-    className="w-24 h-24 rounded-full object-cover mr-20"
-  />
-  <img
-    src={exampleImage}
-    alt="Supporter 2"
-    className="w-24 h-24 rounded-full object-cover mr-20"
-  />
-  <img
-    src={exampleImage}
-    alt="Supporter 3"
-    className="w-24 h-24 rounded-full object-cover mr-20"
-  />
-  <img
-    src={exampleImage}
-    alt="Supporter 4"
-    className="w-24 h-24 rounded-full object-cover"
-  />
-</div>
+              <div className="supporters  flex justify-center items-center flex-col sm:flex-row">
+                <img
+                  src={exampleImage}
+                  alt="Supporter 1"
+                  className="w-1/4 h-auto max-w-24 rounded-full object-cover mb-4 sm:mr-4"
+                />
+                <img
+                  src={exampleImage}
+                  alt="Supporter 2"
+                  className="w-1/4 h-auto max-w-24 rounded-full object-cover mb-4 sm:mr-4"
+                />
+                <img
+                  src={exampleImage}
+                  alt="Supporter 3"
+                  className="w-1/4 h-auto max-w-24 rounded-full object-cover mb-4 sm:mr-4"
+                />
+                <img
+                  src={exampleImage}
+                  alt="Supporter 4"
+                  className="w-1/4 h-auto max-w-24 rounded-full object-cover mb-4 sm:mr-4"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <br />
-
       <Footer />
     </section>
   );

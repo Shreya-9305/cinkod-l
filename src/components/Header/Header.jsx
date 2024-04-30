@@ -26,15 +26,13 @@ const Header = () => {
   return (
     <>
       <nav className="w-full h-auto bg-black lg:px-24 md:px-16 sm:px-14 px-12 py-4 shadow-md">
-        <div className="justify-between mx-auto lg:w-full md:items-center md:flex">
-          
+        <div className="justify-between ml-4 mx-auto lg:w-full md:items-center md:flex">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
-             
               <Link to="/" className="flex items-center">
                 <img src={logo} alt="Logo" className="h-8 md:h-10" />
               </Link>
-              
+
               <div className="md:hidden">
                 <button
                   className="p-2 text-gray-700 rounded-md outline-none border border-transparent focus:border-gray-400 focus:border"
@@ -56,7 +54,6 @@ const Header = () => {
             </div>
           </div>
 
-          
           <div
             className={`flex justify-between items-center md:block ${
               navbar ? "block" : "hidden"
