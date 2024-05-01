@@ -17,7 +17,6 @@ const Header = () => {
     {
       name: "Community",
       link: "/events",
-      
     },
     {
       name: "Chapters",
@@ -50,58 +49,40 @@ const Header = () => {
                       className="text-gray-400 cursor-pointer"
                       size={24}
                     />
-                  )}+
+                  )}
                 </button>
               </div>
             </div>
           </div>
 
           <div
-            className={`flex justify-center md:block ${
-              navbar ? "block" : "hidden"
-            }`}
+            className={`${
+              navbar ? "flex" : "hidden"
+            } md:flex md:items-center md:w-auto w-full`}
           >
-            <ul className="list-none  lg:flex md:flex sm:block block gap-x-2 gap-y-16">
+            <ul className="list-none lg:flex md:flex sm:block block gap-x-2 gap-y-16">
               {Navbar.map((item, index) => (
                 <li key={index}>
-                  {item.dropdown ? (
-                    <div className="relative inline-block">
-                      <span className="text-white mx-2 text-[1.15rem] font-medium tracking-wider hover:text-Yellow ease-out duration-700 cursor-pointer">
-                        {item.name}
-                      </span>
-                      <ul className={`absolute bg-black text-white pt-2 pb-1 px-2 rounded-md ${navbar ? 'block' : 'hidden'}`}>
-                        {item.dropdown.map((subItem, subIndex) => (
-                          <li key={subIndex}>
-                            <Link
-                              to={subItem.link}
-                              className="block py-1 hover:text-gray-200"
-                            >
-                              {subItem.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ) : (
-                    <Link
-                      to={item.link}
-                      className="text-white mx-2 text-xl font-medium tracking-wider hover:text-Blue ease-out duration-700"
-                    >
-                      {item.name}
-                    </Link>
-                  )}
+                  <Link
+                    to={item.link}
+                    className="text-white mx-2 text-xl font-medium tracking-wider hover:text-Blue ease-out duration-700"
+                  >
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="flex items-center">
-            <button className="bg-Yellow text-[1.1rem] font-semibold text-black px-4 py-1.5 hover:bg-y  ease-out duration-1000 rounded lg:ml-10 md:ml-6 sm:ml-0 ml-0">
-              Register
-            </button>
-            <button className="bg-transparent text-[1.1rem] hover:bg-Blue text-white ease-out duration-1000 font-normal px-4 py-1.5 rounded border-2 border-Blue lg:ml-10 md:ml-6 sm:ml-0 ml-0">
-              Sign in
-            </button>
+          <div className="hidden md:block">
+            <div className="flex items-center">
+              <button className="bg-Yellow text-[1.1rem] font-semibold text-black px-4 py-1.5 hover:bg-yellow-600 ease-out duration-1000 rounded lg:ml-10 md:ml-6">
+                Register
+              </button>
+              <button className="bg-transparent text-[1.1rem] hover:bg-blue text-white ease-out duration-1000 font-normal px-4 py-1.5 rounded border-2 border-Blue lg:ml-10 md:ml-6">
+                Sign in
+              </button>
+            </div>
           </div>
         </div>
       </nav>

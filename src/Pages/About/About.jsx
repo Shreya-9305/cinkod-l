@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 
 const About = () => {
   return (
-    <section className="introduction">
+    <section className="introduction overflow-x-hidden">
       <Header/>
       
       <div className="title flex flex-col pt-12 pl-4  ">
@@ -78,7 +78,7 @@ const About = () => {
         <div className="title flex flex-col py-10 pt-12 pl-8">
           {/* Your title content */}
         </div>
-        <div className="aboutus-text text-white flex flex-col mx-4 md:mx-96">
+        <div className="aboutus-text text-white flex flex-col mx-4 lg:overflow-x-hidden md:mx-96">
           <h1 className="font-bold text-2xl mb-5">ABOUT US</h1>
           <p>
             Bacon ipsum dolor amet tri-tip biltong kielbasa pancetta picanha
