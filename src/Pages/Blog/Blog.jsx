@@ -42,13 +42,13 @@ const Blog = () => {
               Next
             </button>
           </div>
-          <div className="flex justify-center  mb-4">
+          <div className="flex  text-white justify-center  mb-4">
             {/* */}
-            <select className="mr-4 px-4 py-2 bg-white border border-gray-300 rounded-md">
+            <select className="mr-4 px-4 py-2 bg-gray-800 border border-gray-800 rounded-md">
               <option value="option1">Categories</option>
             </select>
             {/* */}
-            <select className="px-4 py-2 bg-white border border-gray-300 rounded-md">
+            <select className="px-4 py-2 bg-gray-800 border border-gray-800 rounded-md">
               <option value="option1">Tags</option>
             </select>
           </div>
