@@ -6,6 +6,8 @@ import About from "../Pages/About/About";
 import Community from "../Pages/Community/Community";
 import Event from "../Pages/Event/Event";
 import Blog from "../Pages/Blog/Blog";
+import Chapter from "../components/chapters/chapter";
+import CC from "../components/chapters-college/cc";
 
 
 
@@ -19,11 +21,13 @@ const Router = () => {
        
         {/* <Route path="/home" element={<HomePage />}/> */}
 
-        <Route path="/" element={<About/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/events" element={<Community/>}/>
         <Route path="/event" element={<Event/>}/>
+        <Route path="/chapter" element={<Chapter/>}/>
+        <Route path="/chapter/college" element={<CC/>}/>
         <Route path="/blogs" element={<Blog/>}/>
       
        

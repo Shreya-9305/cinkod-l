@@ -2,8 +2,8 @@ import React from 'react'
 import Img1 from "../../assets/home/Img1.png"
 import Laptop from "../../assets/home/laptop.png"
 import Countdown from './countdown'
-import Footer from '../../components/Footer/Footer'
-import Header from '../../components/Header/Header'
+import Footer from '../Footer/Footer'
+import Header from '../Header/Header'
 
 
 function Home() {
@@ -14,11 +14,11 @@ function Home() {
 
 
 
-<div className='overflow-x-hidden relative bg-[#121212]'     >
+<div className='overflow-x-hidden relative bg-[#121212]'   style={{zIndex:'-3'}}  >
 
 <Header/>
 
-      <div className=" relative flex justify-center items-center h-screen ">
+      <div className=" relative flex justify-center items-center h-screen " style={ {zIndex: '-2'}}>
      
       <div className="absolute w-80 h-80 rounded-full" style={{ background: 'linear-gradient(to bottom right, var(--color1), var(--color2), var(--color3))', '--color1': 'rgb(241, 236, 33)', '--color2': 'rgb(62, 141, 137)', '--color3': 'rgb(1, 160, 225)', filter: 'blur(7.66rem)', zIndex: '-1' }}></div>
 
@@ -42,12 +42,12 @@ function Home() {
 {/* ********** NEXT PAGE *************** */}
 
 
-      <div className=" relative flex justify-center items-center h-full lg:h-screen pb-10 mt-[10rem] " >
+      <div className=" relative flex justify-center items-center h-full lg:h-screen pb-10 mt-[10rem] " style={ {zIndex: '-2'}}>
         
         
       <div className="relative w-full h-full">
-  <div className="absolute w-72 h-72 rounded-full bg-gradient-to-br from-[#01A0E1] to-[#01A0E1] filter blur-[8rem] top-[25%] left-[20%] lg:left-[30%]" ></div>
-  <div className="absolute w-72 h-72 rounded-full bg-gradient-to-br from-blue-400 via-teal-500 to-yellow-400 filter blur-[8rem] top-[60%] left-[45%] lg:top-[55%] lg:left-[50%]" ></div>
+  <div className="absolute w-72 h-72 rounded-full bg-gradient-to-br from-[#01A0E1] to-[#01A0E1] filter blur-[8rem] top-[25%] left-[20%] lg:left-[30%]" style={{zIndex: '-1' }}></div>
+  <div className="absolute w-72 h-72 rounded-full bg-gradient-to-br from-blue-400 via-teal-500 to-yellow-400 filter blur-[8rem] top-[60%] left-[45%] lg:top-[55%] lg:left-[50%]" style={{zIndex: '-1' }}></div>
 {/* *********************************************** */}
 
 <h1 className='text-the-blue text-4xl font-light ml-44 mb-20 mt-20'> How we help the students </h1>
@@ -111,10 +111,10 @@ function Home() {
 
 
 
-<div className=" relative flex justify-center items-center h-full lg:h-full mb-40 pb-10 " >
+<div className=" relative flex justify-center items-center h-full lg:h-full mb-40 pb-10 " style={ {zIndex: '-2'}}>
 
-  <div className="absolute w-72 h-72 rounded-full bg-gradient-to-br from-[#01A0E1] to-[#01A0E1] filter blur-[8rem] top-[25%] left-[20%] lg:left-[30%]" ></div>
-  <div className="absolute w-72 h-72 rounded-full bg-gradient-to-br from-blue-400 via-teal-500 to-yellow-400 filter blur-[8rem] top-[60%] left-[45%] lg:top-[55%] lg:left-[50%]" ></div>
+  <div className="absolute w-72 h-72 rounded-full bg-gradient-to-br from-[#01A0E1] to-[#01A0E1] filter blur-[8rem] top-[25%] left-[20%] lg:left-[30%]" style={{zIndex: '-1' }}></div>
+  <div className="absolute w-72 h-72 rounded-full bg-gradient-to-br from-blue-400 via-teal-500 to-yellow-400 filter blur-[8rem] top-[60%] left-[45%] lg:top-[55%] lg:left-[50%]" style={{zIndex: '-1' }}></div>
 
   
 

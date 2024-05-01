@@ -6,9 +6,10 @@ import Footer from "../../components/Footer/Footer";
 const About = () => {
   return (
     <section className="introduction">
-      <Header />
-      <div className="title flex flex-col pt-12 pl-8">
-        <div className="text text-center">
+      <Header/>
+      
+      <div className="title flex flex-col pt-12 pl-4  ">
+        <div className="text text-center b">
           <h1 className="text-Blue uppercase font-bold text-5xl tracking-normal ">
             cinkod <span className="text-Yellow uppercase">developer</span>{" "}
             community
@@ -27,8 +28,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="title flex flex-col">{/* Your title content */}</div>
-      <div className="cards flex flex-wrap justify-center py-6">
+      <div className="title flex flex-col bg-red-400">{/* Your title content */}</div>
+      <div className="cards flex flex-wrap justify-center py-6 px-24">
         {/* Displaying the cards */}
         {[...Array(6)].map((_, index) => (
           <div

@@ -8,7 +8,7 @@ const Event = () => {
   return (
     <section className="event-display">
       <Header />
-      <div class="text-white text-center font-bold text-3xl md:text-5xl lg:text-6xl py-8 ">
+      <div class="text-white text-center font-bold text-2xl md:text-5xl lg:text-6xl py-8 ">
         <h1>Welcome to</h1>
         <h1 class="text-Blue">
           CINKOD <span class="text-Yellow">DEVELOPER</span> COMMUNITY
@@ -27,7 +27,7 @@ const Event = () => {
           <img
             src={exampleImage}
             alt="Description of your image"
-            class="w-full max-h-96 mx-3"
+            class="w-full max-h-96 mx-3 object-cover"
           />
         </div>
         <h1 class="text-white font-bold text-3xl py-8">About the event</h1>
@@ -64,8 +64,8 @@ const Event = () => {
             </p>
           </div>
           <div class="flex flex-col md:flex-row justify-around py-8 px-48 text-white text-center md:text-left">
-            <div class="flex flex-wrap justify-center md:justify-between  w-full">
-              <div class="flex flex-wrap justify-between md:justify-between mx-4">
+            <div class="flex flex-wrap justify-center md:justify-between   w-full">
+              <div class="flex flex-wrap justify-between md:justify-between gap-3 mx-4">
                 <div class="text-center mb-4 md:mb-0 relative">
                   <div class="relative inline-block px-8">
                     <img

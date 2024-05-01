@@ -100,6 +100,7 @@ const Community = () => {
                       <p className="text-white">{card.description}</p>
                       <div className="flex flex-col mt-2">
                         <button className="bg-yellow-500 hover:bg-yellow-400 text-slate-800 font-normal py-2 px-4 rounded">
+                          
                           <a href="/Event">RSVP</a>
                         </button>
                       </div>
