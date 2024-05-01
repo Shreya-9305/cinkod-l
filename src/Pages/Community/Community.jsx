@@ -14,11 +14,10 @@ const Community = () => {
     tags: ["Tag A", "Tag B"],
   }));
 
-  
   const filterByCategory = (event) => {
     const category = event.target.value;
     setSelectedCategory(category === "All Categories" ? null : category);
-    setSelectedTag(null); 
+    setSelectedTag(null);
   };
 
   const filterByTag = (event) => {
@@ -27,7 +26,6 @@ const Community = () => {
     setSelectedCategory(null);
   };
 
- 
   const cardMatchesFilters = (card) => {
     if (selectedCategory && card.category !== selectedCategory) {
       return false;
@@ -55,17 +53,17 @@ const Community = () => {
           className="w-2/5 px-4 py-2 mt-3 mb-7 border border-gray-300 rounded-md  focus:outline-none focus:border-blue-500"
         />
       </div>
-
+      <h1 className="text-white text-3xl text-center py-2 px-2 font-bold">CINKOD COMMUNITY LIST</h1>
       <div className="flex justify-center mb-12  rounded-lg ">
         <div className="w-full md:w-4/5 lg:w-3/4 mb-12 bg-gradient-to-br from-Blue/20 to-transparent rounded-lg py-10 px-10">
-        <div className="flex justify-between mt-2">
-    <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
-      Back
-    </button>
-    <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
-      Next
-    </button>
-  </div>
+          <div className="flex justify-between mt-2">
+            <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
+              Back
+            </button>
+            <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
+              Next
+            </button>
+          </div>
           <div className="flex justify-center  text-white font-medium  mb-4">
             {/* First dropdown button */}
             <select className="mr-4 px-4 py-2  bg-gray-800 border border-gray-800 rounded-md">
@@ -100,7 +98,6 @@ const Community = () => {
                       <p className="text-white">{card.description}</p>
                       <div className="flex flex-col mt-2">
                         <button className="bg-yellow-500 hover:bg-yellow-400 text-slate-800 font-normal py-2 px-4 rounded">
-                          
                           <a href="/Event">RSVP</a>
                         </button>
                       </div>

@@ -14,7 +14,7 @@ function Chapter() {
 
   return (
     <div>
-      <div className="bg-gradient-to-b from-black to-[#13131a] text-white w-full p-1 h-full">
+      <div className="bg-gradient-to-b flex flex-col items-center from-black to-[#13131a] text-white w-full p-1 h-full">
         <Header />
 
         <section className='flex flex-col justify-center items-center'>
