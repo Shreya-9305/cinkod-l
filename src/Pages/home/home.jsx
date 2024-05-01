@@ -18,9 +18,14 @@ function Home() {
 
 <Header/>
 
+
+<div className="absolute w-80 h-80 top-[7%] left-[40%] rounded-full" style={{ background: 'linear-gradient(to bottom right, var(--color1), var(--color2), var(--color3))', '--color1': 'rgb(241, 236, 33)', '--color2': 'rgb(62, 141, 137)', '--color3': 'rgb(1, 160, 225)', filter: 'blur(7.66rem)'}}></div>
+
+
+
       <div className=" relative flex justify-center items-center h-screen ">
      
-      <div className="absolute w-80 h-80 rounded-full" style={{ background: 'linear-gradient(to bottom right, var(--color1), var(--color2), var(--color3))', '--color1': 'rgb(241, 236, 33)', '--color2': 'rgb(62, 141, 137)', '--color3': 'rgb(1, 160, 225)', filter: 'blur(7.66rem)', zIndex: '-1' }}></div>
+      {/*  */}
 
         <div className="container w-4/5 h-1/2 lg:w-2/3">
           <div className="w-full h-full text-white flex flex-col gap-4 items-center justify-start  ">
