@@ -8,6 +8,7 @@ import Event from "../Pages/Event/Event";
 import Blog from "../Pages/Blog/Blog";
 import Chapter from "../components/chapters/chapter";
 import CC from "../components/chapters-college/cc";
+import BlogSpecf from "../components/blog-specf/BlogSpecf";
 
 
 
@@ -29,6 +30,7 @@ const Router = () => {
         <Route path="/chapter" element={<Chapter/>}/>
         <Route path="/chapter/college" element={<CC/>}/>
         <Route path="/blogs" element={<Blog/>}/>
+        <Route path="/blogs/specf" element={<BlogSpecf/>}/>
       
        
       </Routes>

@@ -39,7 +39,7 @@ function CC() {
 
 <div className="about flex flex-col items-center h-full mb-24 w-full">
 
-<h1 className='text-white hover:text-slate-400 font-extralight text-3xl text-left mt-56 w-full'>About Us</h1>
+<h1 className='text-white hover:text-slate-400 font-extralight text-3xl text-left mt-28 w-full'>About Us</h1>
 
 <p className='text-white leading-8 text-lg ml-8 mt-8  ' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quibusdam laudantium dolor soluta quod, quaerat ratione dicta. Porro corporis illum aliquid quaerat tempore! Dicta suscipit assumenda expedita. Mollitia quas quisquam pariatur enim corrupti? Laudantium, optio! Sit eum eveniet saepe commodi fugiat delectus magni iste ipsum aliquid culpa? Magnam, facilis non sint neque alias facere sapiente sed accusantium illum odio consectetur in nobis, reprehenderit repudiandae deleniti ducimus vero, doloribus veritatis?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione animi corrupti neque debitis inventore veritatis ipsa repellendus esse voluptatibus ducimus ab quibusdam quidem, officiis minima harum laboriosam amet voluptates. Sunt dolores labore pariatur beatae.</p>
 
