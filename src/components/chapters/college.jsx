@@ -15,7 +15,7 @@ function College(CollegeName , Address) {
         <div className="">
         <h3 class="text-xl font-bold">{CollegeName = "College Name"}</h3>
         <p class="text-gray-400">{Address= " sample-address"}</p>
-        <button class="mt-4 bg-yellow-500 text-black py-2 px-4 rounded-lg hover:bg-yellow-400">View More</button>
+        <button class="mt-4 bg-yellow-500 text-black py-2 px-4 rounded-lg hover:bg-yellow-400"><a href="/chapter/college">View More</a></button>
         </div>
       </div>
     </div>

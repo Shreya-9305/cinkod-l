@@ -5,10 +5,11 @@ import Footer from "../../components/Footer/Footer";
 
 const About = () => {
   return (
+
     <section className="introduction overflow-x-hidden">
       <Header/>
       
-      <div className="title flex flex-col pt-12 pl-4  ">
+      <div className="titl flex flex-col pt-12 pl-4  ">
         <div className="text text-center b">
           <h1 className="text-Blue uppercase font-bold text-5xl tracking-normal ">
             cinkod <span className="text-Yellow uppercase">developer</span>{" "}
