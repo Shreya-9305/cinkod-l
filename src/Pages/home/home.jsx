@@ -29,14 +29,15 @@ function Home() {
 
         <div className="container w-4/5 h-1/2 lg:w-2/3">
           <div className="w-full h-full text-white flex flex-col gap-4 items-center justify-start  ">
-            <h1 className='block text-5xl mt-4 '> Lorem ipsum </h1>
-            <h1 className='block text-5xl '> <span className='text-the-yellow'>Lorem ipsum</span>  dolor sit </h1>
+            <h1 className='block text-5xl mt-4 '>Empowering Tomorrow’s  </h1>
+            <h1 className='block text-5xl '> <span className='text-the-yellow'>Innovators </span>  Today!</h1>
 
-            <p className=' block text-lg text-center mt-6'> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae necessitatibus molestias maxime omnis, eveniet velit eaque ullam saepe, amet accusamus rem! Illo, accusantium numquam?</p>
+            <p className=' block text-lg text-center mt-6'> You're at the epicentre of student innovation. Welcome to CinKod, where your journey as a developer begins, where possibilities are limitless and the opportunities are endless.
+</p>
 
             <h1 className=' text-the-yellow text-lg'> Have a look at our community</h1>
-            <button className="bg-transparent border-2 cursor-pointer border-[rgb(1,160,225)] text-[#01A0E1] hover:bg-blue-500 hover:text-[#fff] py-2 px-4  font-bold">
-                     View Community
+            <button className="bg-transparent border-2 cursor-pointer border-[rgb(1,160,225)] text-[#01A0E1] hover:bg-blue-500 hover:text-[#fff] py-2 px-4  font-bold"><a href="/events"> View Community</a>
+                    
              </button>
 
              <Countdown/>
@@ -70,15 +71,17 @@ function Home() {
 
   <div class="w-full lg:w-1/2 p-4 md:w-2/3 sm:w-full h-1/2 mb-4 md:mb-0">
     <div class="bg-[#ffffff28] border-2 border-r-blue-300 shadow-sm shadow-blue-400 border-b-blue-400 rounded-lg p-4 h-full">
-      <h2 class="text-white text-xl font-bold mb-2">Title </h2>
-      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <h2 class="text-white text-xl font-bold mb-2">Networking Opportunities: </h2>
+      <p class="text-white"> Forge Connection and Shape Your Future. From Industry Leaders to Student Developers, we at Cinkod will provide valuable Networking opportunities to improve your circle and build meaningful connections.
+</p>
     </div>
   </div>
 
   <div class="w-full lg:w-1/2 md:w-2/3 p-4 sm:w-full h-1/2 mb-4 md:mb-0">
     <div class="bg-[#ffffff28] backdrop-blur-2xl border-2 border-l-blue-300  border-b-blue-400  shadow-sm shadow-teal-500  order-b-blue-400 rounded-lg p-4 h-full transform lg:-translate-y-8">
-      <h2 class="text-white text-xl font-bold mb-2">Title </h2>
-      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <h2 class="text-white text-xl font-bold mb-2">Hands-on Projects: </h2>
+      <p class="text-white"> Leverage cutting-edge technology and build real-world projects. These projects will help you foster your technical expertise but also develop your problem-solving skills.
+</p>
     </div>
   </div>
 
@@ -86,15 +89,16 @@ function Home() {
 
   <div class="w-full lg:w-1/2 p-4 md:w-2/3 sm:w-full h-1/2 mb-4 md:mb-0">
     <div class="bg-[#ffffff28] border-2 border-b-teal-500 border-l-teal-500 shadow-sm shadow-teal-500 rounded-lg p-4 h-full ">
-      <h2 class="text-white text-xl font-bold mb-2">Title </h2>
-      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <h2 class="text-white text-xl font-bold mb-2">Workshops: </h2>
+      <p class="text-white"> Accelerate your skill development by participating in workshops and training sessions to keep you updated with the new Technologies and get hands-on experience with tools used by Industry Leaders.
+</p>
     </div>
   </div>
 
   <div class="w-full lg:w-1/2 p-4 md:w-2/3 sm:w-full h-1/2 mb-4 md:mb-0">
     <div class="bg-[#ffffff28] border-2 border-b-teal-500 border-l-teal-500 shadow-sm shadow-teal-500 rounded-lg p-4 h-full transform lg:-translate-y-8">
-      <h2 class="text-white text-xl font-bold mb-2">Title </h2>
-      <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <h2 class="text-white text-xl font-bold mb-2">Project Support:  </h2>
+      <p class="text-white">Receive guidance for your projects from peers and community members. From Ideas for Hackathon to Execution we will be with you each step to bring your ideas to life.</p>
     </div>
   </div>
 
@@ -135,7 +139,8 @@ function Home() {
          <img src={Img1} alt="img1 h-full" />
       </div>
 
-<p className='block text-white text-lg mr-2 ml-8 text-justify mt-16 w-[55%]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique assumenda nesciunt ipsam vel exercitationem nisi deserunt maiores quae debitis ea magnam doloremque provident enim possimus, laborum cupiditate beatae cumque magni dicta voluptatem vero. Fugit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima, ducimus tempore ex odit illo voluptates corrupti facere dolorum harum, incidunt error? Ipsa.</p>
+<p className='block text-white text-lg mr-2 ml-8 text-justify mt-16 w-[55%]'> Bring Cinkod to your college campus and join us in cultivating a vibrant community of tech enthusiasts. By opening the doors to Cinkod at your college, you'll unlock a world of opportunities for skill development, impactful projects and collaboration. Join the movement and let's create a future of innovation together!
+</p>
 
 
 </div>
@@ -144,7 +149,8 @@ function Home() {
 
       
 
-<p className='block text-white w-[55%] text-lg mr-8  ml-2 text-justify mt-16'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique assumenda nesciunt ipsam vel exercitationem nisi deserunt maiores quae debitis ea magnam doloremque provident enim possimus, laborum cupiditate beatae cumque magni dicta voluptatem vero. Fugit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima, ducimus tempore ex odit illo voluptates corrupti facere dolorum harum, incidunt error? Ipsa.</p>
+<p className='block text-white w-[55%] text-lg mr-8  ml-2 text-justify mt-16'>At Cinkod, we work hard but party harder. Immerse yourself in a vibrant community culture through our cultural and recreational events, from hackathons to cultural celebrations. We bring teams together through interactive workshops and team-building exercises. Enjoy fun-filled outings that foster a sense of camaraderie among colleagues. We believe in creating a balanced environment that celebrates hard work while encouraging creativity and teamwork.
+</p>
 
 <div className="image h-full   ">
          <img src={Laptop} alt="img1 h-full" />
